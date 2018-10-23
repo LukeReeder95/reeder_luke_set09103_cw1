@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='external.css') }}" />
+    <div id="desc">
+    <p>Welcome to my Xenoblade 2 website.
+        This site indends to allow the user to view any blade or driver avalible.<br>
+        It has been implemented by dividing the blades into different classes and subclasses to allow a filtered approach to find the specific blade or driver you're looking for.<br>
+        The site uses Python, Flask and sqlite3 to run and store the data.
+    </div>
+    {% endblock %}

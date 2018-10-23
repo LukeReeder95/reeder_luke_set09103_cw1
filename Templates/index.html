@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='external.css') }}" />
+    <title>Xenoblade App</title>
+</head>
+
+    <body>
+        <div id="indexList">
+        <ul id="indexUL">
+            <li id="indexLi"><a id="indexLiA"  href="{{ url_for('index') }}">Home</a>
+            <li id="indexLi"><a id="indexLiA"  href="{{ url_for('drivers') }}">Drivers</a>
+            <li id="indexLi"><a id="indexLiA"  href="{{ url_for('blades') }}">Blades</a>
+            <li id="indexLi"><a id="indexLiA"  href="{{ url_for('roles') }}">Roles</a>
+            <li id="indexLi"><a id="indexLiA"  href="{{ url_for('weapons') }}">Weapons</a>
+            <li id="indexLi"><a id="indexLiA"  href="{{ url_for('element') }}">Elements</a>
+            <li id="indexLi"><a id="indexLiA"  href="{{ url_for('send') }}">Add New</a>
+        </ul>
+        {% block content %} {% endblock %}
+    </body>
+</html>

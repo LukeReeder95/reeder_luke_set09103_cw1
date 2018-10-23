@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='external.css') }}" />
+    <div id="desc">
+    <ul>
+        <h2>{{ driver.name }} </h2>
+        <p> {{ driver.desc }} </p>
+    </ul>
+</div>
+    {% endblock %}
